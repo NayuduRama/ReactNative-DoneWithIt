@@ -1,4 +1,4 @@
-// import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { StyleSheet, Text, View, Image, StatusBar, Platform } from 'react-native'; 
 import { MaterialIcons } from '@expo/vector-icons';
@@ -7,21 +7,21 @@ import { AntDesign } from '@expo/vector-icons';
 import ViewImageScreen from './App/Screens/ViewImageScreen';
 import WelcomeScreen from './App/Screens/WelcomeScreen';
 import AppText from './App/components/AppText';
+import BoxStyles from './App/Screens/BoxStyles';
+import Buttons from './App/components/Buttons';
+import AppButton from './App/components/AppButton';
 
 export default function App() {
   return (
      
-      // <WelcomeScreen/> 
+      <WelcomeScreen/> 
       // <ViewImageScreen/>
-      <View style={styles.container}>
-        {/* <MaterialIcons name="mark-email-unread" size={24} color="dodgerblue" /> */}
-        
-        <AppText style={styles.text}> I <AntDesign name="heart" size={18} color="dodgerblue" />  React-Native. This is my first React Native Application</AppText>
-        {/* <View style={styles.box}>
-          <View style= {styles.innerBox}></View>
-          <View style= {styles.innerBox2}></View>
-        </View> */}
-      </View>
+          // <AppText style={styles.text}> I <AntDesign name="heart" size={18} color="dodgerblue" />  React-Native. This is my first React Native Application</AppText> 
+      // <View style={styles.container}>
+      //     <AppButton title="Login" onPress={() => console.log("Tapped")}/> 
+      // </View>
+    // <BoxStyles/>
+    // <Buttons/>
   );
 }
 
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
+    // paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
     alignItems: 'center',
     justifyContent: 'center',
   },
