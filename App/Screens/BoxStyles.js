@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 
 function BoxStyles(props) {
     return ( 
@@ -7,7 +7,12 @@ function BoxStyles(props) {
         <View style={styles.container}>
             
             <View style={styles.box}>
-            <View style= {styles.innerBox}></View>
+            <View style= {styles.innerBox}>
+                <Text  style={styles.hello}>Hello</Text>
+                <Text style={styles.world}>world!</Text>
+                <Text >HRU!</Text>
+            </View>
+            {/* <View style= {styles.innerBox}></View> */}
             <View style= {styles.innerBox2}></View>
             </View> 
         </View>
@@ -23,8 +28,8 @@ const styles = StyleSheet.create({
                 },
     box : {
             backgroundColor: "dodgerblue",
-            width: 100,
-            height: 100,
+            width: 400,
+            height: 500,
             // alignItems: 'center',
             // justifyContent: 'center',
             borderWidth: 10,
@@ -34,12 +39,18 @@ const styles = StyleSheet.create({
             shadowOffset: { width: 0, height: 0 },
             shadowOpacity: 1,
             shadowRadius: 10,
-            padding: 10
+            paddingVertical: 10,
+            paddingHorizontal: 10
         },
+    hello: {
+        color: "green",
+        // paddingVertical: 50
+    },
   innerBox: {
-                width: 25,
-                height: 25,
+                width: 250,
+                height: 250,
                 backgroundColor: "tomato",
+                paddingVertical: 50, 
                 // margin: 10
              },
   innerBox2: {
@@ -48,6 +59,10 @@ const styles = StyleSheet.create({
                 backgroundColor: "tomato",
                 margin: 10
             },
+    world: {
+        color: "blue",
+        // paddingVertical: 10
+    },
 })
 
 export default BoxStyles;

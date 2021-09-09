@@ -7,25 +7,41 @@ import { AntDesign } from '@expo/vector-icons';
 import ViewImageScreen from './App/Screens/ViewImageScreen';
 import WelcomeScreen from './App/Screens/WelcomeScreen';
 import AppText from './App/components/AppText';
-import BoxStyles from './App/Screens/BoxStyles';
-import Buttons from './App/components/Buttons';
+import BoxStyles from './App/Screens/BoxStyles'; 
 import AppButton from './App/components/AppButton';
+import Card from './App/components/Card';
+import ListingDetailsScreen from './App/Screens/ListingDetailsScreen';
 
 export default function App() {
   return (
      
       <WelcomeScreen/> 
+      // <ListingDetailsScreen/>
+      // <View style={styles.cardContainer}>
+      //   <Card 
+      //       title = "Red Jocket for sale!"
+      //       subtitle = "$100"
+      //       image = {require('./App/assets/jacket.jpg')}
+      //       ></Card>
+      //       {/* <Image source={require('./App/assets/jacket.jpg')}></Image> */}
+
+      // </View>
       // <ViewImageScreen/>
           // <AppText style={styles.text}> I <AntDesign name="heart" size={18} color="dodgerblue" />  React-Native. This is my first React Native Application</AppText> 
       // <View style={styles.container}>
       //     <AppButton title="Login" onPress={() => console.log("Tapped")}/> 
       // </View>
     // <BoxStyles/>
-    // <Buttons/>
+    // <Buttons/> 
   );
 }
 
 const styles = StyleSheet.create({
+  cardContainer: {
+    backgroundColor: "#f8f4f4",
+    padding: 10,
+    paddingTop: 50,
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
