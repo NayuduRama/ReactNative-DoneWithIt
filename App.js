@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, Image, StatusBar, Platform } from 'react-native'; 
+import { StyleSheet, Text, View, Image, Platform, StatusBar, SafeAreaView } from 'react-native'; 
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
@@ -11,11 +11,14 @@ import BoxStyles from './App/Screens/BoxStyles';
 import AppButton from './App/components/AppButton';
 import Card from './App/components/Card';
 import ListingDetailsScreen from './App/Screens/ListingDetailsScreen';
+import MessageScreen from './App/Screens/MessageScreen';
+// console.log(Constants);
 
 export default function App() {
-  return (
-     
-      <WelcomeScreen/> 
+  return (  
+      // <WelcomeScreen/> 
+        <MessageScreen/> 
+
       // <ListingDetailsScreen/>
       // <View style={styles.cardContainer}>
       //   <Card 
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    // paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
+    paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
     alignItems: 'center',
     justifyContent: 'center',
   },
