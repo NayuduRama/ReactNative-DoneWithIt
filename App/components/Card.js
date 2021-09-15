@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
        overflow: "hidden" 
     },
     detailsContainer: { 
-        padding: 20
+        padding: 10
 
     },
     image: {
@@ -34,11 +34,11 @@ const styles = StyleSheet.create({
     },
     title: {
         color: colors.balck,
-        margin: 10,
+        // margin: 10,
     },
     subtitle: {
         color: colors.secondary,
-        margin: 10,
+        // margin: 10,
 
     }
 

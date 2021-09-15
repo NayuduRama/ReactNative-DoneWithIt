@@ -12,12 +12,16 @@ import AppButton from './App/components/AppButton';
 import Card from './App/components/Card';
 import ListingDetailsScreen from './App/Screens/ListingDetailsScreen';
 import MessageScreen from './App/Screens/MessageScreen';
+import AccountScreen from './App/Screens/AccountScreen';
+import ListingsScreen from './App/Screens/ListingsScreen';
 // console.log(Constants);
 
 export default function App() {
   return (  
       // <WelcomeScreen/> 
-        <MessageScreen/> 
+        // <MessageScreen/> 
+        <AccountScreen/>
+        // <ListingsScreen/>
 
       // <ListingDetailsScreen/>
       // <View style={styles.cardContainer}>
