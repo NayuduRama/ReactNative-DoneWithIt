@@ -1,6 +1,6 @@
 
-import React from 'react';
-import { StyleSheet, Text, View, Image, Platform, StatusBar, SafeAreaView } from 'react-native'; 
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Image, Platform, StatusBar, SafeAreaView, TextInput, Switch } from 'react-native'; 
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
@@ -13,20 +13,37 @@ import Card from './App/components/Card';
 import ListingDetailsScreen from './App/Screens/ListingDetailsScreen';
 import MessageScreen from './App/Screens/MessageScreen';
 import AccountScreen from './App/Screens/AccountScreen';
-import ListingsScreen from './App/Screens/ListingsScreen';
+import ListingsScreen from './App/Screens/ListingsScreen'; 
+import Screen from './App/Screens/Screen';
+import AppInputText from './App/components/AppInputText';
+import SwitchComponent from './App/components/SwitchComponent';
+import AppPicker from './App/components/AppPicker';
+import PickerItem from './App/components/PickerItem';
 // console.log(Constants);
 
+const categories = [
+  { label: "Furniture", value: "1"},
+  { label: "Clothing", value: "2" },
+  { label: "Electric", value: "3" }
+]
 export default function App() {
+  const [category, setCategory] = useState(categories[0]);
   return (  
       // <WelcomeScreen/> 
         // <MessageScreen/> 
-        <AccountScreen/>
+        // <AccountScreen/> 
+        <Screen>
+            {/* <AppInputText placeholder="Email" icon="email"/> */}
+             {/* <SwitchComponent/> */}
+             <AppPicker selectedItem={category} onSelectItem={item => setCategory} icon="apps" items={categories} placeholder="Category"/>
+             <AppInputText placeholder="Email" icon="email"/> 
+        </Screen>
         // <ListingsScreen/>
 
       // <ListingDetailsScreen/>
       // <View style={styles.cardContainer}>
       //   <Card 
-      //       title = "Red Jocket for sale!"
+      //       title = "Red Jocket for sale"
       //       subtitle = "$100"
       //       image = {require('./App/assets/jacket.jpg')}
       //       ></Card>
