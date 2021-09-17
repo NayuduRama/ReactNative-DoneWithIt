@@ -19,6 +19,7 @@ import AppInputText from './App/components/AppInputText';
 import SwitchComponent from './App/components/SwitchComponent';
 import AppPicker from './App/components/AppPicker';
 import PickerItem from './App/components/PickerItem';
+import LoginScreen from './App/Screens/LoginScreen';
 // console.log(Constants);
 
 const categories = [
@@ -29,15 +30,16 @@ const categories = [
 export default function App() {
   const [category, setCategory] = useState(categories[0]);
   return (  
+    <LoginScreen/>
       // <WelcomeScreen/> 
         // <MessageScreen/> 
         // <AccountScreen/> 
-        <Screen>
-            {/* <AppInputText placeholder="Email" icon="email"/> */}
-             {/* <SwitchComponent/> */}
-             <AppPicker selectedItem={category} onSelectItem={item => setCategory} icon="apps" items={categories} placeholder="Category"/>
-             <AppInputText placeholder="Email" icon="email"/> 
-        </Screen>
+        // <Screen>
+        //     {/* <AppInputText placeholder="Email" icon="email"/> */}
+        //      {/* <SwitchComponent/> */}
+        //      <AppPicker selectedItem={category} onSelectItem={item => setCategory} icon="apps" items={categories} placeholder="Category"/>
+        //      <AppInputText placeholder="Email" icon="email"/> 
+        // </Screen>
         // <ListingsScreen/>
 
       // <ListingDetailsScreen/>
