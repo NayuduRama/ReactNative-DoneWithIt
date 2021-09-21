@@ -20,6 +20,7 @@ import SwitchComponent from './App/components/SwitchComponent';
 import AppPicker from './App/components/AppPicker';
 import PickerItem from './App/components/PickerItem';
 import LoginScreen from './App/Screens/LoginScreen';
+import RegisterScreen from './App/Screens/RegisterScreen';
 // console.log(Constants);
 
 const categories = [
@@ -30,7 +31,8 @@ const categories = [
 export default function App() {
   const [category, setCategory] = useState(categories[0]);
   return (  
-    <LoginScreen/>
+    // <LoginScreen/>
+    <RegisterScreen/>
       // <WelcomeScreen/> 
         // <MessageScreen/> 
         // <AccountScreen/> 
