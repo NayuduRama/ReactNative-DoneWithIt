@@ -1,5 +1,5 @@
 import React from 'react'; 
-import AppText from '../components/AppText'
+import AppText from '../AppText'
 
 function ErrorMessage({error, visible}) {
     if(!error || !visible) return null;
