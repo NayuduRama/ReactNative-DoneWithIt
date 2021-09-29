@@ -21,6 +21,7 @@ import AppPicker from './App/components/AppPicker';
 import PickerItem from './App/components/PickerItem';
 import LoginScreen from './App/Screens/LoginScreen';
 import RegisterScreen from './App/Screens/RegisterScreen';
+import ListingEditScreen from './App/Screens/ListingEditScreen';
 // console.log(Constants);
 
 const categories = [
@@ -32,14 +33,16 @@ export default function App() {
   const [category, setCategory] = useState(categories[0]);
   return (  
     // <LoginScreen/>
-    <RegisterScreen/>
+    // <RegisterScreen/>
+    <ListingEditScreen/>
+
       // <WelcomeScreen/> 
         // <MessageScreen/> 
         // <AccountScreen/> 
         // <Screen>
         //     {/* <AppInputText placeholder="Email" icon="email"/> */}
         //      {/* <SwitchComponent/> */}
-        //      <AppPicker selectedItem={category} onSelectItem={item => setCategory} icon="apps" items={categories} placeholder="Category"/>
+        //      <AppPicker selectedItem={category} onSelectItem={item => setCategory(item)} icon="apps" items={categories} placeholder="Category"/>
         //      <AppInputText placeholder="Email" icon="email"/> 
         // </Screen>
         // <ListingsScreen/>

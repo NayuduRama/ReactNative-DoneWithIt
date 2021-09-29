@@ -1,14 +1,15 @@
 import React from 'react';
-import {View, StyleSheet, Platform, TextInput } from 'react-native'
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Screen from '../Screens/Screen';
+import {View, StyleSheet, TextInput } from 'react-native'
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import defaultStyles from './config/styles'; 
 
 function AppInputText({icon, ...otherProps}) {
     return ( 
             <View style={styles.container}>
                 { icon && <MaterialCommunityIcons name={icon} size={20} color={defaultStyles.colors.midum} style={styles.icon} />} 
-                <TextInput  style={styles.textInput} {...otherProps}/>
+                <TextInput  
+                            placeholderTextColor={defaultStyles.colors.midum}
+                            style={styles.textInput} {...otherProps}/>
             </View>    
     );
 }
