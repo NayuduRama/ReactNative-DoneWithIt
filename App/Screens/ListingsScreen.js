@@ -1,8 +1,7 @@
 import React from 'react';
 import {FlatList, StyleSheet} from 'react-native'
 import Card from '../components/Card';
-import colors from '../components/config/colors';
-import ListItem from '../components/ListItem';
+import colors from '../components/config/colors'; 
 import Screen from './Screen';
 
 const listings = [

@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { FlatList, SafeAreaView, StyleSheet, StatusBar, Platform, View } from 'react-native';
+import { FlatList, StyleSheet, StatusBar } from 'react-native';
 import ListItem from '../components/ListItem';
 import ListItemDelete from '../components/ListItemDelete';
 import ListItemSeparator from '../components/ListItemSeparator';

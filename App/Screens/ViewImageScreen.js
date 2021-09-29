@@ -1,6 +1,5 @@
 import React from 'react';
-import { Image, View, StyleSheet, Text, _Text } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { Image, View, StyleSheet, Text, _Text } from 'react-native'; 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
  
 
@@ -20,26 +19,21 @@ const styles = StyleSheet.create({
     },
     closeIcon: {
         width: 50,
-        height: 50,
-        // backgroundColor: "tomato",
+        height: 50, 
         top: 50,
         left: 30,
         position: "absolute"
     },
     deleteIcon: {
         width: 50,
-        height: 50,
-        // backgroundColor: "yellowgreen",
+        height: 50, 
         top: 50,
         right: 50,
         position: "absolute"
     },
     container : {
         flex: 1,
-        backgroundColor: 'black',
-        // paddingTop: Platform.OS == 'android' ? StatusBar.currentHeight : 0,
-        // alignItems: 'center',
-        // justifyContent: 'center',
+        backgroundColor: 'black', 
     },
     primary : {
         flexBasis: ""

@@ -46,8 +46,7 @@ const styles = StyleSheet.create({
     },
     price: {
         color: colors.secondary,
-        fontWeight: "500",
-        // marginVertical: 10
+        fontWeight: "500", 
     },
     userContainer: {
         marginVertical: 20
