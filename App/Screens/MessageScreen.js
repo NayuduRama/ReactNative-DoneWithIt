@@ -8,7 +8,7 @@ import Screen from './Screen';
 const initialMessages = [
     {
         id: '1',
-        title: 'T1',
+        title: "T1",
         description: "D1",
         image: require('../assets/rama.jpg'),
     },
