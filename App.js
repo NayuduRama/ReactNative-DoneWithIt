@@ -1,12 +1,11 @@
 
-import React from 'react'; 
- 
-import ListingEditScreen from './App/Screens/ListingEditScreen'; 
+import React from 'react';   
+import MessageScreen from './App/Screens/MessageScreen'  
 
 export default function App() { 
   return (  
      
-    <ListingEditScreen/>
+       <MessageScreen/>
  
   );
 }
